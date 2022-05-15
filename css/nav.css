@@ -1,0 +1,46 @@
+/* nav er under e immediate child er upor effect */
+nav > ul{
+    display: flex;
+    background-color: rgb(91, 174, 174);
+    border-radius: 30px;
+    padding: 10px 10px;
+}
+
+nav li{
+    list-style: none;
+    font-size: large;
+    padding: 10px;
+    border: 10px solid rgb(255, 182, 45);
+    border-radius: 30px;
+    margin-right: 5px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(255, 182, 45);
+}
+
+nav li a:hover{
+    text-decoration: dotted;
+    color: green;
+}
+
+nav li:hover{
+    list-style: none;
+    font-size: large;
+    padding: 10px;
+    border: 10px solid green;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+
+.dropdown{
+    display: none;
+}
+
+nav > ul > li:hover > ul{
+    display: block;
+    position: absolute;
+    padding: 0;
+    background-color: black;
+}
