@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5</title>
+    <style>
+        .div {
+            background-color: aqua;
+            /* align-items: center;
+            text-align: center; */
+        }
+
+        div h1 {
+            display: block;
+            height: 100px;
+            width: 100px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        div h2 {
+            display: inline;
+
+            /* height: 100px;
+            width: 100px; */
+            /* inline element e height width dewa jay na */
+
+            /* margin-top: 5%;
+            /* margin-bottom: 5%; */
+            /* Not Possible */
+
+            margin-left: 5%;
+            margin-right: 5%;
+
+            /* padding-top: 5%;
+            padding-bottom: 5%; */
+            /* Not Possible */
+
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        div h3 {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        /* width-height<padding<border<margin */
+        .pseudo {
+            text-align: center;
+            box-shadow: 0px 0px 50px red;
+        }
+
+        .pseudo:hover {
+            color: red;
+            box-shadow: 10px 10px 50px rgb(146, 29, 255);
+        }
+
+        input:focus {
+            color: blue;
+            border-radius: 20px;
+        }
+
+        .align div {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            /* align-items: center; */
+            /* align-content: center; */
+            /* align-self: center; */
+        }
+
+        .align div span {
+            background-color: brown;
+            /* align-items: center; */
+            /* align-content: center; */
+            /* align-self: center; */
+        }
+
+        a {
+            color: olivedrab;
+        }
+
+        a:visited {
+            color: orangered;
+        }
+
+        li:nth-child(2n+1) {
+            /* first-child/last-child */
+
+            color: red;
+        }
+
+        h4::before {
+            content: 'Pseudo Start ';
+            color: red;
+        }
+
+        h4::after {
+            content: ' End Pseudo';
+            color: blue;
+        }
+
+        .swimming div {
+            border: 1px dashed pink;
+        }
+        .sw{
+            background-color: palegreen;
+            padding: 30px;
+        }
+        /* .swimming{
+            position: relative; 
+        } */
+        /* #ring{
+            position: relative;
+            margin-left: 20px;
+        } 
+        affect just on its own position */
+        
+        /* #ring{
+            position: absolute;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        affect according to its parent class */
+
+        /* #ring{
+            position: sticky;
+            top: 20px;
+        }
+        affect only inside its parent class */
+
+        /* #ring{
+            position: fixed;
+            top: 20px;
+        }
+        affect on entire page */
+
+        #boy{
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+        }
+        #ring{
+            position: sticky;
+            top: 40px;
+            z-index: 1;
+        }
+        #water{
+            position: sticky;
+            top: 70px;
+            z-index: 0;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <!-- div*3>h2{Heading-$}+p{Paragraph-$} -->
+    <div class="div">
+        <h1>Heading-1</h1>
+        <h1>Heading-11</h1>
+        <p>Paragraph-1</p>
+    </div>
+    <div class="div">
+        <h2>Heading-2</h2>
+        <h2>Heading-22</h2>
+        <p>Paragraph-2</p>
+    </div>
+    <div class="div">
+        <h3>Heading-3</h3>
+        <h3>Heading-33</h3>
+        <p>Paragraph-3</p>
+    </div>
+
+    <!-- pseudo -->
+    <p class="pseudo">Paragraph 4</p>
+    <input type="text" placeholder="Your Name">
+    <div class="div align">
+        <div><span>Span-1</span></div>
+        <div><span>Span-2</span></div>
+        <div><span>Span-3</span></div>
+    </div>
+    <a
+        href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi43_DJ5uD3AhUWHCsKHdfBB64YABAAGgJzZg&ohost=www.google.com&cid=CAESbOD2gF277DgEk1m5JUVTO8KhSESADrHuN0ps4DpdMXx5mrKk8CK0M0yamesnNpCMvTwrMfF4NJ18fRftmh0QQ9M2Kk3x-_rVwKrDmVBx8UWwiqfX5IFxSK3FbfHjM2NvHr1_NXdcq0mGaTsbCQ&sig=AOD64_1IULb0UVuJTApBuy9bMQS05-XYyQ&q&adurl&ved=2ahUKEwjisOrJ5uD3AhX7SGwGHanaAyoQ0Qx6BAgFEAE">Website</a>
+    <ol>
+        <li>Titan-1</li>
+        <li>Titan-2</li>
+        <li>Titan-3</li>
+        <li>Titan-4</li>
+        <li>Titan-5</li>
+        <li>Titan-6</li>
+        <li>Titan-7</li>
+        <li>Titan-8</li>
+        <li>Titan-9</li>
+        <li>Titan-10</li>
+    </ol>
+    <h4>H4-1</h4>
+    <h4>H4-2</h4>
+    <h4>H4-3</h4>
+
+    <!-- Position -->
+    <section>
+        <h1>S-1</h1>
+        <h1>S-11</h1>
+        <h2>S-111</h2>
+    </section>
+    <section class="swimming">
+        <div id="boy"><img src="images/boy.svg" alt=""></div>
+        <div id="ring"><img src="images/ring.svg" alt=""></div>
+        <div id="water"><img src="images/water.svg" alt=""></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+    </section>
+    <section>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        <div class="sw"><span>ss</span></div>
+        
+    </section>
+</body>
+
+</html>
