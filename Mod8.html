@@ -99,6 +99,7 @@
         .md8-6media-container {
             display: flex;
             flex-wrap: wrap;
+            margin-top: 10px;
         }
 
         .md8-7media img {
@@ -133,6 +134,7 @@
             background-color: rgba(218, 32, 181, 0.222);
             color: black;
             font-weight: 700;
+            text-shadow: 1px 1px 1px goldenrod;
         }
 
         .md8-7desc button {
@@ -154,6 +156,37 @@
         } */
         /* 700px er choto hole dekhabe */
         /* 1000px er boro hole dekhabe */
+
+        /* Style Priority ::: !important > inline style > id > class > normal style  */
+
+        :root {
+            --main-color: red;
+            --background-color: goldenrod;
+        }
+
+        .md8_5-2 h3 {
+            color: var(--main-color);
+            background-color: var(--background-color);
+        }
+
+        .md8_5-2div,
+        aside {
+            color: var(--main-color);
+            float: left;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .md8_5-2 aside {
+            width: 200px;
+            background-color: black;
+        }
+
+        .md8_5-2div {
+            width: calc(100% - 200px);
+            background-color: brown;
+        }
+        /* clear:both => jei element er upor implement kora hobe tar ashpashe kichu thakbe na */
     </style>
 </head>
 
@@ -255,6 +288,16 @@
                     <br><button>Adopt Now !!!</button>
                 </div>
             </div>
+        </div>
+
+        <div class="md8_5-2">
+            <h3>Header</h3>
+            <section>
+                <aside>Aside</aside>
+                <div class="md8_5-2div">
+                    <h4>Div</h4>
+                </div>
+            </section>
         </div>
 
     </main>
