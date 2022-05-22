@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 12</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row g-3 align-items-center my-1">
+        <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">Password</label>
+        </div>
+        <div class="col-auto">
+            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+        </div>
+        <div class="col-auto">
+            <span id="passwordHelpInline" class="form-text">
+                Must be 8-20 characters long.
+            </span>
+        </div>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+    </div>
+    <form class="form-floating">
+        <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com"
+            value="test@example.com">
+        <label for="floatingInputValue">Input with value</label>
+    </form>
+    <form class="form-floating">
+        <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com"
+            value="test@example.com">
+        <label for="floatingInputInvalid">Invalid input</label>
+    </form>
+
+    <p class="bg-warning mt-2 p-3 text-center">Responsive Row Col</p>
+    <!-- .row>.col-lg-3.col-md-4.col-sm-6.col-12*6>img.img-fluid[src=images/players/player-$.png]+h1{Player-$} -->
+    <div class="row m-0">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img src="images/players/player-1.png" alt="" class="img-fluid">
+            <h1>Player-1</h1>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img src="images/players/player-2.png" alt="" class="img-fluid">
+            <h1>Player-2</h1>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img src="images/players/player-3.png" alt="" class="img-fluid">
+            <h1>Player-3</h1>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img src="images/players/player-4.png" alt="" class="img-fluid">
+            <h1>Player-4</h1>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img src="images/players/player-5.png" alt="" class="img-fluid">
+            <h1>Player-5</h1>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img src="images/players/player-6.png" alt="" class="img-fluid">
+            <h1>Player-6</h1>
+        </div>
+    </div>
+
+    <!-- card group -->
+    <p class="bg-warning mt-2 p-3 text-center">Responsive Card Group</p>
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card h-100 border-danger">
+                <img src="images/boy.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-warning">
+                <img src="images/ring.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-primary">
+                <img src="images/water.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-success">
+                <img src="images/favicon.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
