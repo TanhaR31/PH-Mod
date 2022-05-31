@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eccff31281.js" crossorigin="anonymous"></script>
+    <title>Module 8</title>
+    <style>
+        .md8-2container {
+            border: 1px solid;
+            display: flex;
+            height: 100px;
+            /* width: 700px; */
+            justify-content: center;
+            /* horizontally align */
+            align-items: stretch;
+            /* vertically align */
+            margin-bottom: 10px;
+        }
+
+        .md8-2box {
+            border: 1px solid;
+            /* width: 100px; */
+            text-align: center;
+            margin: 5px;
+        }
+
+        #md8-2box1 {
+            order: 2;
+            flex-grow: 1;
+        }
+
+        #md8-2box2 {
+            order: 1;
+        }
+
+        #md8-2box3 {
+            order: 3;
+        }
+
+        .md8-3login-container {
+            display: flex;
+            justify-content: center;
+            border: 1px solid;
+            /* background-color: lightpink; */
+            margin-bottom: 10px;
+        }
+
+        .md8-3login-form {
+            display: flex;
+            /* border: 1px solid; */
+            flex-direction: column;
+            color: purple;
+        }
+
+        .md8-3login-form input,
+        .md8-3login-form button {
+            font-size: 1.3em;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .md8-3login-form input:focus {
+            box-shadow: 0px 0px 10px purple;
+        }
+
+        .md8-3login-form button {
+            cursor: pointer;
+            background-color: purple;
+            /* align-self: center; */
+            color: white;
+            font-weight: 700;
+        }
+
+        .fa-solid {
+            font-size: 1.3em;
+            color: purple;
+        }
+
+        .md8-4grid-container {
+            display: grid;
+            grid-template-columns: 3fr 1fr 4fr 2fr;
+            grid-template-rows: 1fr repeat(2, 3fr);
+            grid-gap: 20px;
+        }
+
+        .md8-4grid-box {
+            border: 2px solid goldenrod;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .md8-6media-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .md8-7media img {
+            width: 100px;
+            padding-top: 65px;
+            transition: transform 5s;
+        }
+
+        .md8-6media-box {
+            border: 3px solid goldenrod;
+            margin: 5px;
+            padding-bottom: 60px;
+            width: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .md8-6media-box:hover .md8-7desc {
+            display: block;
+        }
+
+        .md8-6media-box:hover .md8-7media img {
+            opacity: 0.3;
+            display: block;
+            transform: scale(2) rotate(360deg);
+        }
+
+        .md8-7desc {
+            position: absolute;
+            top: 0%;
+            display: none;
+            background-color: rgba(218, 32, 181, 0.222);
+            color: black;
+            font-weight: 700;
+            text-shadow: 1px 1px 1px goldenrod;
+        }
+
+        .md8-7desc button {
+            background-color: rgba(218, 32, 181, 0.738);
+        }
+
+        /* @media (max-width: 500px) {           
+            .md8-6media-box {
+                background-color: goldenrod;
+            }
+            .md8-6media-container {
+                flex-direction: column;
+            }
+        }
+        @media (min-width: 1000px) {
+            .md8-6media-box {
+                background-color: greenyellow;
+            }
+        } */
+        /* 700px er choto hole dekhabe */
+        /* 1000px er boro hole dekhabe */
+
+        /* Style Priority ::: !important > inline style > id > class > normal style  */
+
+        :root {
+            --main-color: red;
+            --background-color: goldenrod;
+        }
+
+        .md8_5-2 h3 {
+            color: var(--main-color);
+            background-color: var(--background-color);
+        }
+
+        .md8_5-2div,
+        aside {
+            color: var(--main-color);
+            float: left;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .md8_5-2 aside {
+            width: 200px;
+            background-color: black;
+        }
+
+        .md8_5-2div {
+            width: calc(100% - 200px);
+            background-color: brown;
+        }
+        /* clear:both => jei element er upor implement kora hobe tar ashpashe kichu thakbe na */
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- 8-2 -->
+        <div class="md8-2container">
+            <div id="md8-2box1" class="md8-2box">BOX-1</div>
+            <div id="md8-2box2" class="md8-2box">BOX-2</div>
+            <div id="md8-2box3" class="md8-2box">BOX-3</div>
+        </div>
+
+        <!-- 8-3 -->
+        <section class="md8-3login-container">
+            <form action="" class="md8-3login-form">
+                <h2 style="text-align: center;">Login Form</h2>
+                <p><i class="fa-solid fa-inbox"></i> <input type="email" name="email" id="" placeholder="Email"></p>
+                <p><i class="fa-solid fa-key"></i> <input type="password" name="password" id="" placeholder="Password">
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- 8-4 -->
+        <div class="md8-4grid-container">
+            <div class="md8-4grid-box">BOX-1</div>
+            <div class="md8-4grid-box">BOX-2</div>
+            <div class="md8-4grid-box">BOX-3</div>
+            <div class="md8-4grid-box">BOX-4</div>
+            <div class="md8-4grid-box">BOX-5</div>
+            <div class="md8-4grid-box">BOX-6</div>
+            <div class="md8-4grid-box">BOX-7</div>
+            <div class="md8-4grid-box">BOX-8</div>
+            <div class="md8-4grid-box">BOX-9</div>
+            <div class="md8-4grid-box">BOX-10</div>
+            <div class="md8-4grid-box">BOX-11</div>
+            <div class="md8-4grid-box">BOX-12</div>
+        </div>
+
+        <!-- 8-6  8-7  8-8 -->
+        <div class="md8-6media-container">
+            <div class="md8-6media-box">
+                <div class="md8-7media">
+                    <img src="images/favicon.png" alt="">
+                </div>
+                <div class="md8-7desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, fugit cupiditate officia dolor
+                        dolores rerum quod expedita et nesciunt a.</p>
+                    <br><button>Adopt Now !!!</button>
+                </div>
+            </div>
+            <div class="md8-6media-box">
+                <div class="md8-7media">
+                    <img src="images/favicon.png" alt="">
+                </div>
+                <div class="md8-7desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, fugit cupiditate officia dolor
+                        dolores rerum quod expedita et nesciunt a.</p>
+                    <br><button>Adopt Now !!!</button>
+                </div>
+            </div>
+            <div class="md8-6media-box">
+                <div class="md8-7media">
+                    <img src="images/favicon.png" alt="">
+                </div>
+                <div class="md8-7desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, fugit cupiditate officia dolor
+                        dolores rerum quod expedita et nesciunt a.</p>
+                    <br><button>Adopt Now !!!</button>
+                </div>
+            </div>
+            <div class="md8-6media-box">
+                <div class="md8-7media">
+                    <img src="images/favicon.png" alt="">
+                </div>
+                <div class="md8-7desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, fugit cupiditate officia dolor
+                        dolores rerum quod expedita et nesciunt a.</p>
+                    <br><button>Adopt Now !!!</button>
+                </div>
+            </div>
+            <div class="md8-6media-box">
+                <div class="md8-7media">
+                    <img src="images/favicon.png" alt="">
+                </div>
+                <div class="md8-7desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, fugit cupiditate officia dolor
+                        dolores rerum quod expedita et nesciunt a.</p>
+                    <br><button>Adopt Now !!!</button>
+                </div>
+            </div>
+            <div class="md8-6media-box">
+                <div class="md8-7media">
+                    <img src="images/favicon.png" alt="">
+                </div>
+                <div class="md8-7desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, fugit cupiditate officia dolor
+                        dolores rerum quod expedita et nesciunt a.</p>
+                    <br><button>Adopt Now !!!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md8_5-2">
+            <h3>Header</h3>
+            <section>
+                <aside>Aside</aside>
+                <div class="md8_5-2div">
+                    <h4>Div</h4>
+                </div>
+            </section>
+        </div>
+
+    </main>
+</body>
+
+</html>
