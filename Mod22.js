@@ -1,4 +1,4 @@
-// 1
+// Funtion 1
 function seerToMon(seer) {
     if (typeof (seer) !== 'number') {
         return "Please Type 1 Number For 1st Function !!!";
@@ -12,7 +12,7 @@ console.log(seerToMon('40'));
 console.log(seerToMon(40));
 console.log('');
 
-// 2
+// Funtion 2
 function totalSales(shirtQ, pantQ, shoeQ) {
     if (typeof (shirtQ) !== 'number' || typeof (pantQ) !== 'number' || typeof (shoeQ) !== 'number') {
         return "Please Type 3 Numbers For 2nd Function !!!";
@@ -31,7 +31,7 @@ console.log(totalSales('1', 1, 1));
 console.log(totalSales(1, 1, 1));
 console.log('');
 
-// 3
+// Funtion 3
 function deliveryCost(product) {
     if (typeof (product) !== 'number') {
         return "Please Type 1 Number For 3rd Function !!!";
@@ -65,7 +65,7 @@ console.log(deliveryCost('201'));
 console.log(deliveryCost(201));
 console.log('');
 
-// 4
+// Funtion 4
 function perfectFriend(names) {
     if (typeof (names) !== 'object') {
         return "Please Give An Array Of Friends Name For Last Function !!!";
